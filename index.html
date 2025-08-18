@@ -57,18 +57,21 @@
             justify-content: center;
             align-items: center;
             align-content: center;
-            padding: 3rem 8rem;
-
+            padding: 3rem 14rem;
         }
-
+        .bg-grey{
+            background: var(--grey-light);
+            box-shadow:  0 0 15px rgba(0,0,0,0.2);
+        }
         .row {
             width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: start;
-            gap: 5rem;  
+            gap: 4rem;  
             padding: 2rem 10;
+            
         }
         .col {
             width: 100%;
@@ -82,9 +85,10 @@
            
         }
         .logo-img {
-            width: 100px;
+            width: 150px;
             height: auto;
-            margin: 1rem 0;
+            padding-right: 1.3rem;
+
         }
         .logo-txt {
             display: flex;
@@ -99,17 +103,31 @@
             line-height: 1;
             color: var(--black);
         }
-        
-        h2, h3, h4 {
+        .stripe{
+            width: 100%;
+            text-align: center;
+            padding-top: 3rem;
+            font-size: 1.3rem;
+            font-style: italic
+        }
+        h2{
             font-family: 'Montserrat', Arial, sans-serif;
             font-weight: bold;
             font-size: 2rem;
+            color: var(--black);
+        }
+        h3, h4 {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: 800;
+            font-size: 1.6rem;
+            text-align: center;
             color: var(--black);
         }
         p {
             font-family: 'Roboto', Arial, sans-serif;
             font-weight: 400;
             font-size: 1.3rem;
+            line-height: 2.2rem;
             color: var(--black);
         }
         span {
@@ -119,7 +137,7 @@
         }
         ul {
             padding-left: 1.5rem;
-            
+            line-height: 2.2rem;
         }
         ul li {
             position: relative;
@@ -131,6 +149,17 @@
         }
         ul li::marker {
             color: var(--accent);
+        }
+        .ul-frame {
+            border: 3px solid var(--accent);
+            border-radius: 8px;
+            padding: 1rem 1.5rem;
+            background: var(--grey-light);
+            display: flex;
+            justify-content: center;
+        }
+        .b-less li {
+            list-style: none;
         }
         .cta {
             display: inline-block;
@@ -156,6 +185,7 @@
             margin: 2rem 0;
             font-family: 'Roboto', Arial, sans-serif;
             font-size: 1.1rem;
+            box-shadow: 6px 6px 4px rgba(0,0,0,0.08);
         }
         th {
             background: var(--accent);
@@ -179,6 +209,28 @@
             font-size: 0.95rem;
             margin-top: 2rem;
         }
+        @media (max-width: 900px) {
+            .container {
+                padding: 2rem 1.5rem;
+            }
+            .row {
+                flex-direction: column;
+                gap: 2rem;
+                align-items: stretch;
+                padding: 1rem 0;
+            }
+            .col {
+                width: 100%;
+            }
+            .logo-container {
+                
+                align-items: center;
+            }
+            .logo-img {
+                padding-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -195,29 +247,34 @@
                     </div>
                 </div>
                 <div class="col">
+                    <h3>"Los datos no solo explican: <br> guían, anticipan y transforman."</h3>
                 </div>
             </div>
-            <div class="row">Tu referencia confiable para consultar y generar datos relacionados con habilidades de aprendizaje , nivel de conocimiento adquirido, gestión de los procesos de enseñanza – aprendizaje en instituciones educativas. </div>
+            <div class="row">
+                <div class="stripe"><span>CIEXE</span> Tu referencia confiable para consultar y generar datos relacionados con habilidades de aprendizaje , <br> nivel de conocimiento adquirido, gestión de los procesos de enseñanza – aprendizaje en instituciones educativas. </div>
+            </div>
         </div>
     </header>
     <main class="">
-        <section class="container">
+        <section class="container bg-grey">
             <div class="row">
                 <div class="col" >
                     <h2>¿Qué es CIEXE?</h2>
-                    <p>Un centro  de investigación educativa que transforma el análisis de datos en decisiones.</p>
-                    <p>Desde 2006, CIEXE convierte evaluaciones, encuestas  y mediciones psicométricas en información clara y accionable para instituciones, empresas y proyectos educativos.</p>
-                    <p>A través de la psicometría validada, la tecnología aplicada y el enfoque personalizado, generamos y compartimos información estadística útil y clara a instituciones educativas, empresas y organizaciones que buscan mejorar desde la evidencia.</p>
+                    <p>Un centro  de investigación educativa que transforma el <span>análisis de datos</span> en decisiones.</p>
+                    <p>Desde 2006, CIEXE convierte <span>evaluaciones, encuestas  y mediciones psicométricas</span> en información clara y accionable para instituciones, empresas y proyectos educativos.</p>
+                    <p>A través de la psicometría validada, la tecnología aplicada y el enfoque personalizado, <span>generamos y compartimos información estadística útil y clara a instituciones educativas, empresas y organizaciones</span> que buscan mejorar desde la evidencia.</p>
                 </div>
                 <div class="col">
                     <h2>Nuestra propuesta de valor</h2>
-                    <ul>
-                        <li>Estadísticas educativas claras y accesibles.</li>
-                        <li>Psicometría digital validada aplicada a gran escala.</li>
-                        <li>Análisis estadístico útil y accionable.</li>
-                        <li>Instrumentos adaptados a problemas reales de aprendizaje.​</li>
-                    </ul>
-                    <p>¿El resultado? Información que sí transforma escuelas, programas y trayectorias educativas.</p>
+                    <div class="ul-frame">
+                        <ul>
+                            <li>Estadísticas educativas claras y accesibles.</li>
+                            <li>Psicometría digital validada aplicada a gran escala.</li>
+                            <li>Análisis estadístico útil y accionable.</li>
+                            <li>Instrumentos adaptados a problemas reales de aprendizaje.​</li>
+                        </ul>
+                    </div>
+                    <p>¿El resultado? <span>Información que sí transforma</span> escuelas, programas y trayectorias educativas.</p>
                 </div>
             </div>
         </section>
@@ -236,7 +293,7 @@
                 </div>
             </div>
         </section>
-        <section class="container">  
+        <section class="container bg-grey">  
             <div class="row">
                 <h2>Qué ofrecemos</h2>
             </div>          
@@ -248,8 +305,8 @@
                         <li>Licencias con costo para acceder a análisis especializados.</li>
                         <li>Venta directa de evaluaciones, informes o diagnósticos.</li>
                     </ul>
-                    <p>En CIEXE creemos que las mejores decisiones educativas y organizacionales no se improvisan: se fundamentan en evidencia.</p>
-                    <p>Nuestro modelo de trabajo se basa en la generación, validación y análisis riguroso de datos psicométricos y estadísticos relacionados con las habilidades de aprendizaje (intelectuales, emocionales, metacognitivas, hábitos y técnicas de estudio) y el nivel de conocimientos adquiridos por estudiantes y colaboradores y la gestión de procesos de enseñanza – aprendizaje en aula.</p>
+                    <p>En CIEXE creemos que <span>las mejores decisiones</span> educativas y organizacionales no se improvisan: <span>se fundamentan en evidencia.</span></p>
+                    <p>Nuestro modelo de trabajo se basa en la <span>generación, validación y análisis riguroso de datos psicométricos y estadísticos relacionados con las habilidades de aprendizaje</span> (intelectuales, emocionales, metacognitivas, hábitos y técnicas de estudio) y el nivel de conocimientos adquiridos por estudiantes y colaboradores y la gestión de procesos de enseñanza – aprendizaje en aula.</p>
                 </div>
                 <div class="col">
                     <p>Gracias a nuestra colaboración continua con empresas especializadas como Lexium, y al análisis de millones de evaluaciones aplicadas en diversos contextos, contamos con un banco de datos robusto y dinámico que permite:</p>
@@ -259,7 +316,7 @@
                         <li>Generar comparaciones contextualizadas.</li>
                         <li>Diseñar estrategias de intervención con mayor precisión.</li>
                     </ul>
-                    <p>Este enfoque nos impulsa a ir más allá de la intuición o la tradición. En CIEXE, todo parte del análisis: lo que medimos, lo que reportamos y lo que proponemos tiene como base datos verificados, actualizados y relevantes.</p>
+                    <p>Este enfoque nos impulsa a ir más allá de la intuición o la tradición. En CIEXE, todo parte del análisis: <span>lo que medimos, lo que reportamos y lo que proponemos tiene como base datos verificados, actualizados y relevantes.</span></p>
                     <p>Con ello, ofrecemos a la comunidad educativa y empresarial un marco confiable para comprender, decidir y actuar con evidencia.</p>
                 </div>
             </div>
@@ -312,8 +369,8 @@
                             <tr>
                                 <td><span>Informes e indicadores</span></td>
                                 <td>
-                                    <p>Elaboramos reportes claros, visuales y accionables para directivos, docentes, fundaciones e instituciones. </p>
-                                    <p>También desarrollamos “informes espejo” para compararse con el promedio nacional o regional.</p>
+                                    Elaboramos reportes claros, visuales y accionables para directivos, docentes, fundaciones e instituciones. <br><br>
+                                    También desarrollamos “informes espejo” para compararse con el promedio nacional o regional.
                                 </td>
                             </tr>
                             <tr>
@@ -325,17 +382,19 @@
                 </div>
             </div>
         </section>
-        <section class="container">
+        <section class="container bg-grey">
+            <div class="row"><h2>Lo que nos distingue</h2></div>
             <div class="row">
-                <div class="col">
-                    <h2>Lo que nos distingue</h2>
-                    <ul>
-                        <li>✓ Rigurosidad técnica + impacto social</li>
-                        <li>✓ Enfoque educativo especializado en habilidades de aprendizaje, conocimientos y gestión educativa</li>
-                        <li>✓ Datos útiles, no solo acumulados</li>
-                        <li>✓ Procesos propios y adaptables</li>
-                        <li>​✓ Psicometría con diagnóstico inmediato</li>
-                    </ul>
+                <div class="col">                   
+                    <div class="ul-frame">
+                        <ul class="b-less">
+                            <li>✓ Rigurosidad técnica + impacto social</li>
+                            <li>✓ Enfoque educativo especializado en habilidades de aprendizaje, <br> conocimientos y gestión educativa</li>
+                            <li>✓ Datos útiles, no solo acumulados</li>
+                            <li>✓ Procesos propios y adaptables</li>
+                            <li>​✓ Psicometría con diagnóstico inmediato</li>
+                        </ul>
+                    </div>
                 </div>                
             </div>
         </section>
