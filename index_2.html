@@ -76,6 +76,8 @@
         }
         .col {
             width: 100%;
+            display: flex;
+            flex-direction: column;
         }
         .logo-container {
             width: 100%;
@@ -117,7 +119,22 @@
             font-size: 2rem;
             color: var(--black);
         }
-        h3, h4 {
+        h3 {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: 800;
+            font-size: 1rem;
+            text-align: left;
+            color: var(--black);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0.6rem;
+        }
+        h3 img {
+            width: 45px;
+            
+        }
+         h4 {
             font-family: 'Montserrat', Arial, sans-serif;
             font-weight: 800;
             font-size: 1.6rem;
@@ -165,8 +182,53 @@
             display: flex;
             justify-content: center;
         }
+        .ul-frame-b {
+            border: 3px solid var(--accent);
+            border-radius: 8px;
+            padding: 1rem 1.5rem;
+            background: var(--accent);
+            display: flex;
+            justify-content: center;
+        }
+        .ul-height-b {
+            height: 540px;
+            justify-content: center !important;
+            align-items: center;
+        }
+        .ul-action-b {
+            height: 540px;
+            justify-content: center !important;
+            align-items: center;
+            text-align: center;
+            font-size: 2rem;
+            font-family: 'montserrat', Arial, sans-serif;
+            font-weight: 800;
+        }
         .b-less li {
             list-style: none;
+        }
+        .a-panel{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .a-panel .row {
+            padding: 0;
+            gap: 1rem;
+        }
+        .a-panel .col {
+            height: 280px;
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            padding: 0 1rem;
+            gap: .2rem;
+        }
+        .a-panel .col p{
+            font-size: 1.1rem;
+            padding: 0;
+            margin: 0;
+            line-height: 1.2rem;
         }
         .cta {
             display: inline-block;
@@ -263,7 +325,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <h3>"Los datos no solo explican: <br> guían, anticipan y transforman."</h3>
+                    <h4>"Los datos no solo explican: <br> guían, anticipan y transforman."</h4>
                 </div>
             </div>
             <div class="row">
@@ -352,60 +414,11 @@
                             <li><img src="img/bullseye.svg" alt="">Investigadores en el área educativa.</li>
                             <li><img src="img/bullseye.svg" alt="">Público en general.</li>
                         </ul>
-                    </div>
+                    </div>            
                 </div>
                 <div class="col">
-                    <h2>Áreas de acción principales</h2>
-                    <p>Publicamos indicadores confiables, actualizados y comprensibles  que se convierten en estadísticas de referencia sobre:</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Categoría</th>
-                                <th>Descripción</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td ><span>Habilidades de aprendizaje</span></td>
-                                <td>Cognitivas, socioemocionales, metacognitivas, de lectura, técnicas y hábitos de estudio de estudiantes y docentes.</td>
-                            </tr>
-                            <tr>
-                                <td><span>Estadísticas de conocimiento adquirido</span></td>
-                                <td>Por estudiantes.</td>
-                            </tr>
-                            <tr>
-                                <td><span>Gestión de procesos de enseñanza – aprendizaje</span></td>
-                                <td>En aula.</td>
-                            </tr>
-                            <tr>
-                                <td><span>Investigación educativa aplicada</span></td>
-                                <td>Estudios por pedido dirigidos a institución, tema o población.</td>
-                            </tr>
-                            <tr>
-                                <td><span>Psicometría personalizada</span></td>
-                                <td>Diseño de instrumentos para medir habilidades intelectuales, socioemocionales, metacognitivas y hábitos de estudio.</td>
-                            </tr>
-                            <tr>
-                                <td><span>Informes e indicadores</span></td>
-                                <td>
-                                    Elaboramos reportes claros, visuales y accionables para directivos, docentes, fundaciones e instituciones. <br><br>
-                                    También desarrollamos “informes espejo” para compararse con el promedio nacional o regional.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><span>Servicios para empresas educativas aliadas</span></td>
-                                <td>Apoyo técnico, análisis psicométrico y validación de herramientas.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-        <section class="container bg-grey">
-            <div class="row"><h2>Lo que nos distingue</h2></div>
-            <div class="row">
-                <div class="col">                   
-                    <div class="ul-frame">
+                    <h2>Lo que nos distingue</h2>
+                    <div class="ul-frame-b ul-height-b">
                         <ul class="b-less">
                             <li>✓ Rigurosidad técnica + impacto social</li>
                             <li>✓ Enfoque educativo especializado en habilidades de aprendizaje, <br> conocimientos y gestión educativa</li>
@@ -414,7 +427,60 @@
                             <li>​✓ Psicometría con diagnóstico inmediato</li>
                         </ul>
                     </div>
-                </div>                
+                </div>
+                
+            </div>
+        </section>
+        <section>
+            <div class="container bg-grey">
+                <div class="row">
+                    <div class="col">
+                        <h2>Áreas de acción principales</h2>
+                        <p>Publicamos indicadores confiables, actualizados y comprensibles  que se convierten en estadísticas de referencia sobre:</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">                    
+                        <div class="a-panel">
+                            <div class="row">
+                                <div class="col ul-frame-b">
+                                    <h3><img src="img/network-5.svg" alt="">Habilidades de aprendizaje</h3>
+                                    <p>Cognitivas, socioemocionales, metacognitivas, de lectura, técnicas y hábitos de estudio de estudiantes y docentes.</p>
+                                </div>
+                                <div class="col ul-frame">
+                                    <h3><img src="img/network-5.svg" alt="">Estadísticas de conocimiento adquirido</h3>
+                                    <p>Por estudiantes.</p>
+                                </div>
+                                <div class="col ul-frame-b">
+                                    <h3><img src="img/network-5.svg" alt="">Gestión de procesos de enseñanza – aprendizaje</h3>
+                                    <p>En aula.</p>
+                                </div>
+                                <div class="col ul-frame">
+                                    <h3><img src="img/network-5.svg" alt="">Investigación educativa aplicada</h3>
+                                    <p>Estudios por pedido dirigidos a institución, tema o población.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col ul-frame">
+                                    <h3><img src="img/network-5.svg" alt="">Psicometría personalizada</h3>
+                                    <p>Diseño de instrumentos para medir habilidades intelectuales, socioemocionales, metacognitivas y hábitos de estudio.</p>
+                                </div>
+                                <div class="col ul-frame-b">
+                                    <h3><img src="img/network-5.svg" alt="">Informes e indicadores</h3>
+                                    <p>Elaboramos reportes claros, visuales y accionables para directivos, docentes, fundaciones e instituciones. <br> <br> También desarrollamos “informes espejo” para compararse con el promedio nacional o regional.</p>
+                                </div>
+                                <div class="col ul-frame">
+                                    <h3><img src="img/network-5.svg" alt="">Servicios para empresas educativas aliadas</h3>
+                                    <p>Apoyo técnico, análisis psicométrico y validación de herramientas.</p>
+                                </div>
+                                <div class="col ul-frame-b ul-action-b">
+                                    <div class="">Solicita tu diagnóstico</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section>
@@ -423,7 +489,7 @@
                     <div class="col">
                         <h2>Contacto</h2>
                         <p>¿Tienes dudas, comentarios o deseas colaborar con CIEXE? Completa el siguiente formulario y nos pondremos en contacto contigo.</p>
-                        <form id="contact-form" style="max-width: 500px; margin: 0 auto;">
+                        <form id="contact-form" style="min-width: 500px; margin: 0 auto;">
                             <div style="margin-bottom: 1.2rem;">
                                 <label for="name" style="display:block; font-weight:600; margin-bottom:0.4rem;">Nombre</label>
                                 <input type="text" id="name" name="name" required
