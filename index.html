@@ -209,6 +209,15 @@
             font-size: 0.95rem;
             margin-top: 2rem;
         }
+        @media (max-width: 1380px) {
+            .container {
+                padding: 2rem 5rem;
+            }
+            .row {
+                gap: 2rem;
+                padding: 1.5rem 0;
+            }
+        }
         @media (max-width: 900px) {
             .container {
                 padding: 2rem 1.5rem;
@@ -400,6 +409,44 @@
                     </div>
                 </div>                
             </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>Contacto</h2>
+                        <p>¿Tienes dudas, comentarios o deseas colaborar con CIEXE? Completa el siguiente formulario y nos pondremos en contacto contigo.</p>
+                        <form id="contact-form" style="max-width: 500px; margin: 0 auto;">
+                            <div style="margin-bottom: 1.2rem;">
+                                <label for="name" style="display:block; font-weight:600; margin-bottom:0.4rem;">Nombre</label>
+                                <input type="text" id="name" name="name" required
+                                    style="width:100%; padding:0.7rem; border:2px solid var(--grey-dark); border-radius:5px; font-size:1rem; background:var(--grey-light); font-family:'Roboto', Arial, sans-serif;">
+                            </div>
+                            <div style="margin-bottom: 1.2rem;">
+                                <label for="email" style="display:block; font-weight:600; margin-bottom:0.4rem;">Correo electrónico</label>
+                                <input type="email" id="email" name="email" required
+                                    style="width:100%; padding:0.7rem; border:2px solid var(--grey-dark); border-radius:5px; font-size:1rem; background:var(--grey-light); font-family:'Roboto', Arial, sans-serif;">
+                            </div>
+                            <div style="margin-bottom: 1.2rem;">
+                                <label for="message" style="display:block; font-weight:600; margin-bottom:0.4rem;">Mensaje</label>
+                                <textarea id="message" name="message" rows="5" required
+                                    style="width:100%; padding:0.7rem; border:2px solid var(--grey-dark); border-radius:5px; font-size:1rem; background:var(--grey-light); font-family:'Roboto', Arial, sans-serif; resize:vertical;"></textarea>
+                            </div>
+                            <button type="submit" class="cta" style="width:100%; font-size:1.1rem;">Enviar mensaje</button>
+                        </form>
+                        <div id="form-success" style="display:none; margin-top:1.5rem; color:green; font-weight:600; text-align:center;">
+                            ¡Gracias por contactarnos! Pronto te responderemos.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+            document.getElementById('contact-form').addEventListener('submit', function(e){
+                e.preventDefault();
+                document.getElementById('contact-form').style.display = 'none';
+                document.getElementById('form-success').style.display = 'block';
+            });
+            </script>
         </section>
     </main>
     <footer>
