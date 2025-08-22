@@ -8,7 +8,7 @@
     <link rel="icon" type="image/svg+xml" href="img/ciexe_logo.svg">
     <link rel="alternate icon" type="image/png" href="img/ciexe_logo.png">
     <!-- Import Montserrat Semibold and Roboto Regular/Semibold from Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Roboto:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800" rel="stylesheet">
     <style>
         :root {
             --background: #F5F5F5;
@@ -29,7 +29,7 @@
             padding: 0;
             background: var(--background);
             color: var(--black);
-            font-family: 'Roboto', Arial, sans-serif;
+            font-family: 'Poppins', Arial, sans-serif;
             
         }
         header {
@@ -39,13 +39,13 @@
             margin: 0;
             font-size: 2.5rem;
             letter-spacing: 2px;
-            font-family: 'Montserrat', Arial, sans-serif;
+            font-family: 'Poppins', Arial, sans-serif;
             font-weight: 600;
         }
         header p {
             margin-top: 1rem;
             font-size: 1.2rem;
-            font-family: 'Roboto', Arial, sans-serif;
+            font-family: 'Poppins', Arial, sans-serif;
             font-weight: 400;
         }
         main {
@@ -74,6 +74,15 @@
             padding: 2rem 10;
             
         }
+        .row-center {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 4rem;  
+            padding: 2rem 10;
+        }
         .col {
             width: 100%;
             display: flex;
@@ -82,13 +91,13 @@
         .logo-container {
             width: 100%;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
            
         }
         .logo-img {
-            width: 150px;
+            width: 180px;
             height: auto;
             padding-right: 1.3rem;
 
@@ -98,7 +107,14 @@
             flex-direction: column;
             justify-content: left;
             color: var(--black);
-            font-family: 'Roboto', Arial, sans-serif;
+            font-family: 'Poppins', Arial, sans-serif;
+        }
+        .logo-baseline {
+            font-size: 1.1rem;
+            font-weight: 600;
+            line-height: 1.2;
+            text-align: center;
+            color: var(--black);
         }
         .logo-title {
             font-size: 1.5rem;
@@ -106,21 +122,25 @@
             line-height: 1;
             color: var(--black);
         }
+        .y-headline{
+            color: var(--accent);
+            text-shadow: 1px 1px 0px rgba(0,0,0,1);
+        }
         .stripe{
             width: 100%;
             text-align: center;
-            padding-top: 3rem;
+            padding-top: 2rem;
             font-size: 1.3rem;
-            font-style: italic
+            
         }
         h2{
-            font-family: 'Montserrat', Arial, sans-serif;
+            font-family: 'Poppins', Arial, sans-serif;
             font-weight: bold;
             font-size: 2rem;
             color: var(--black);
         }
         h3 {
-            font-family: 'Montserrat', Arial, sans-serif;
+            font-family: 'Poppins', Arial, sans-serif;
             font-weight: 800;
             font-size: 1rem;
             text-align: left;
@@ -135,21 +155,21 @@
             
         }
          h4 {
-            font-family: 'Montserrat', Arial, sans-serif;
+            font-family: 'Poppins', Arial, sans-serif;
             font-weight: 800;
             font-size: 1.6rem;
             text-align: center;
             color: var(--black);
         }
         p {
-            font-family: 'Roboto', Arial, sans-serif;
+            font-family: 'Poppins', Arial, sans-serif;
             font-weight: 400;
             font-size: 1.3rem;
             line-height: 2.2rem;
             color: var(--black);
         }
         span {
-            font-family: 'Roboto', Arial, sans-serif;
+            font-family: 'Poppins', Arial, sans-serif;
             font-weight: 600;
             color: var(--black);
         }
@@ -163,7 +183,7 @@
             gap: 0.8rem;
             position: relative;
             margin-bottom: 0.75rem;
-            font-family: 'Roboto', Arial, sans-serif;
+            font-family: 'Poppins', Arial, sans-serif;
             font-size: 1.3rem;
             font-weight: 600;
             color: var(--black);
@@ -201,11 +221,21 @@
             align-items: center;
             text-align: center;
             font-size: 2rem;
-            font-family: 'montserrat', Arial, sans-serif;
+            font-family: 'Poppins', Arial, sans-serif;
             font-weight: 800;
         }
         .b-less li {
             list-style: none;
+        }
+        .y-b {
+            color: var(--accent);
+            font-size: 2rem;
+            font-weight: 800;
+        }
+        .b-b {
+            color: var(--black);
+            font-size: 2rem;
+            font-weight: 800;
         }
         .a-panel{
             display: flex;
@@ -217,6 +247,8 @@
             gap: 1rem;
         }
         .a-panel .col {
+            min-width: 232px;
+            max-width: 300px;
             height: 280px;
             display: flex;
             align-items: start;
@@ -244,7 +276,7 @@
             border-radius: 4px;
             text-decoration: none;
             font-weight: 600;
-            font-family: 'Roboto', Arial, sans-serif;
+            font-family: 'Poppins', Arial, sans-serif;
             margin-top: 2rem;
             transition: background 0.2s, color 0.2s;
         }
@@ -354,22 +386,21 @@
 <body>
     <header >
         <div class="container">
-            <div class="row">
+            <div class="row-center">
                 <div class="col">
                     <div class="logo-container">
                         <div class="logo-img-c"><img src="img/ciexe_logo.svg" alt="CIEXE Logo" class="logo-img"></div>
                         <div class="logo-txt">
-                            <div class="logo-title">CIEXE</div>
                             <div class="logo-baseline">Centro de Investigación y Experimentación Educativa</div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <h4>"Los datos no solo explican: <br> guían, anticipan y transforman."</h4>
+                    <h4 class="y-headline">Los datos no solo explican: <br> guían, anticipan y transforman</h4>
                 </div>
             </div>
             <div class="row">
-                <div class="stripe"><span>CIEXE</span> Tu referencia confiable para consultar y generar datos relacionados con habilidades de aprendizaje, nivel de conocimiento adquirido, gestión de los procesos de enseñanza – aprendizaje en instituciones educativas. </div>
+                <div class="stripe">Tu referencia confiable para consultar y generar datos relacionados con habilidades de aprendizaje, nivel de conocimiento adquirido, gestión de los procesos de enseñanza – aprendizaje en instituciones educativas. </div>
             </div>
         </div>
     </header>
@@ -400,13 +431,13 @@
             <div class="row"><h2>¿Por qué apoyarte en CIEXE?</h2></div>
             <div class="row">
                 <div class="col">                    
-                    <div class="ul-frame b-less">
+                    <div class="ul-frame">
                         <ul>
-                            <li><img src="img/ciexe-bullet.svg" alt="">Somos autónomos.</li>
-                            <li><img src="img/ciexe-bullet.svg" alt="">Somos expertos en el desarrollo de  psicométricos.</li>
-                            <li><img src="img/ciexe-bullet.svg" alt="">Entregamos datos accesibles y reportes visuales.</li>
-                            <li><img src="img/ciexe-bullet.svg" alt="">Atendemos desde un modelo mixto: acceso gratuito, licencias y servicios personalizados.</li>
-                            <li><img src="img/ciexe-bullet.svg" alt="">Contamos con aliados que aplican miles de evaluaciones en pocas horas.</li>
+                            <li><span class="y-b">• </span>Somos autónomos.</li>
+                            <li><span class="y-b">• </span>Somos expertos en el desarrollo de  psicométricos.</li>
+                            <li><span class="y-b">• </span>Entregamos datos accesibles y reportes visuales.</li>
+                            <li><span class="y-b">• </span>Atendemos desde un modelo mixto: acceso gratuito, licencias y servicios personalizados.</li>
+                            <li><span class="y-b">• </span>Contamos con aliados que aplican miles de evaluaciones en pocas horas.</li>
                         </ul>
                     </div>
                 </div>
@@ -419,10 +450,10 @@
             <div class="row">
                 <div class="col">
                     <p>Trabajamos con instrumentos propios, análisis a gran escala y un modelo mixto:</p>
-                    <ul class="b-less">
-                        <li><img src="img/open-source.svg" alt="">Plataforma de datos abiertos de acceso gratuito.</li>
-                        <li><img src="img/open-source.svg" alt="">Licencias con costo para acceder a análisis especializados.</li>
-                        <li><img src="img/open-source.svg" alt="">Venta directa de evaluaciones, informes o diagnósticos.</li>
+                    <ul>
+                        <li><span class="y-b">• </span>Plataforma de datos abiertos de acceso gratuito.</li>
+                        <li><span class="y-b">• </span>Licencias con costo para acceder a análisis especializados.</li>
+                        <li><span class="y-b">• </span>Venta directa de evaluaciones, informes o diagnósticos.</li>
                     </ul>
                     <p>Nuestro modelo de trabajo se basa en la <span>generación, validación y análisis riguroso de datos psicométricos y estadísticos relacionados con las habilidades de aprendizaje</span> (intelectuales, emocionales, metacognitivas, hábitos y técnicas de estudio) y el nivel de conocimientos adquiridos por estudiantes y colaboradores y la gestión de procesos de enseñanza – aprendizaje en aula.</p>
                 </div>
@@ -443,27 +474,27 @@
             <div class="row">
                 <div class="col">
                     <h2>¿A quién nos dirigimos?</h2>
-                    <div class="ul-frame b-less">
-                        <ul>
-                            <li><img src="img/bullseye.svg" alt="">Instituciones educativas (públicas y privadas).</li>
-                            <li><img src="img/bullseye.svg" alt="">Empresas del sector educativo y desarrollo humano.</li>
-                            <li><img src="img/bullseye.svg" alt="">Fundaciones y ONGs interesadas en educación.</li>
-                            <li><img src="img/bullseye.svg" alt="">Personas interesadas en datos educativos confiables.</li>
-                            <li><img src="img/bullseye.svg" alt="">Estudiantes que requieran datos para sus proyectos, tesis, tesinas.</li>
-                            <li><img src="img/bullseye.svg" alt="">Investigadores en el área educativa.</li>
-                            <li><img src="img/bullseye.svg" alt="">Público en general.</li>
+                    <div class="ul-frame">
+                        <ul class="b-less ">
+                            <li><span class="y-b">• </span>Instituciones educativas (públicas y privadas).</li>
+                            <li><span class="y-b">• </span>Empresas del sector educativo y desarrollo humano.</li>
+                            <li><span class="y-b">• </span>Fundaciones y ONGs interesadas en educación.</li>
+                            <li><span class="y-b">• </span>Personas interesadas en datos educativos confiables.</li>
+                            <li><span class="y-b">• </span>Estudiantes que requieran datos para sus proyectos, tesis, tesinas.</li>
+                            <li><span class="y-b">• </span>Investigadores en el área educativa.</li>
+                            <li><span class="y-b">• </span>Público en general.</li>
                         </ul>
                     </div>            
                 </div>
                 <div class="col">
                     <h2>Lo que nos distingue</h2>
-                    <div class="ul-frame-b ul-height-b">
-                        <ul class="b-less">
-                            <li>✓ Rigurosidad técnica + impacto social</li>
-                            <li>✓ Enfoque educativo especializado en habilidades de aprendizaje, <br> conocimientos y gestión educativa</li>
-                            <li>✓ Datos útiles, no solo acumulados</li>
-                            <li>✓ Procesos propios y adaptables</li>
-                            <li>​✓ Psicometría con diagnóstico inmediato</li>
+                    <div class="ul-frame-b ">
+                        <ul>
+                            <li><span class="b-b">• </span>Rigurosidad técnica + impacto social.</li>
+                            <li><span class="b-b">• </span>Enfoque educativo especializado en habilidades de aprendizaje, conocimientos y gestión educativa.</li>
+                            <li><span class="b-b">• </span>Datos útiles, no solo acumulados.</li>
+                            <li><span class="b-b">• </span>Procesos propios y adaptables.</li>
+                            <li><span class="b-b">• </span>Psicometría con diagnóstico inmediato.</li>
                         </ul>
                     </div>
                 </div>
@@ -506,15 +537,13 @@
                                 </div>
                                 <div class="col ul-frame-b">
                                     <h3><img src="img/chart-line-solid-full.svg" class="icon-black" alt="">Informes e indicadores</h3>
-                                    <p>Elaboramos reportes claros, visuales y accionables para directivos, docentes, fundaciones e instituciones. <br> <br> También desarrollamos “informes espejo” para compararse con el promedio nacional o regional.</p>
+                                    <p>Reportes claros, visuales y accionables para directivos, docentes, fundaciones e instituciones. <br> <br> Desarrollamos “informes espejo” para compararse con el promedio nacional o regional.</p>
                                 </div>
                                 <div class="col ul-frame">
                                     <h3><img src="img/network-5.svg" class="icon-black" alt="">Servicios para empresas educativas aliadas</h3>
                                     <p>Apoyo técnico, análisis psicométrico y validación de herramientas.</p>
                                 </div>
-                                <div class="col ul-frame-b ul-action-b">
-                                    <div class="">Solicita más información</div>
-                                </div>
+                                
                             </div>
                             
                         </div>
@@ -549,8 +578,8 @@
                                 <tr>
                                     <td><span>Informes e indicadores</span></td>
                                     <td>
-                                        Elaboramos reportes claros, visuales y accionables para directivos, docentes, fundaciones e instituciones. <br><br>
-                                        También desarrollamos “informes espejo” para compararse con el promedio nacional o regional.
+                                        Reportes claros, visuales y accionables para directivos, docentes, fundaciones e instituciones. <br><br>
+                                        Desarrollamos “informes espejo” para compararse con el promedio nacional o regional.
                                     </td>
                                 </tr>
                                 <tr>
@@ -567,8 +596,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h2>Contacto</h2>
-                        <p>¿Tienes dudas, comentarios o deseas colaborar con CIEXE? Completa el siguiente formulario y nos pondremos en contacto contigo.</p>
+                        <h2>Contactáctanos</h2>
                         <div class="c-form">
                             <form id="contact-form" style="max-width: 500px; margin: 0 auto;">
                                 <div style="margin-bottom: 1.2rem;">
