@@ -83,6 +83,7 @@
             gap: 4rem;  
             padding: 2rem 10;
         }
+        
         .col {
             width: 100%;
             display: flex;
@@ -133,6 +134,61 @@
             padding-top: 2rem;
             font-size: 1.3rem;
             
+        }
+        .ciexe-banner {
+            width: 100%;
+            background: var(--accent);
+            color: var(--black);
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow:  0 0 15px rgba(0,0,0,0.2);
+        }
+        .cb-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        .row-banner {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: start;
+            gap: 2rem;  
+            padding: .2rem .5rem;
+        }
+        .row-banner h4{
+            margin: 0 0 1rem 0;
+        }
+        .row-banner p{
+            margin: 0;
+        }
+        .row-banner ul{
+            margin: 0;
+        }
+        .row-banner>col{
+            margin: 0;
+        }
+        .cta-bn {
+            display: inline-block;
+            width: 300px !important;
+            background: var(--background);
+            color: var(--black);
+            padding: .5rem 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-family: 'Poppins', Arial, sans-serif;
+            margin-top: 2rem;
+            
+            border: 1px solid black;
+            box-shadow: 2px 2px 0px rgba(0,0,0,1);
+            cursor: pointer;
+        }
+        .cta-bn:hover {
+            background: var(--grey-dark);
+            color: var(--black);
+            box-shadow: 0px 0px 0px rgba(0,0,0,0);
         }
         h2{
             font-family: 'Poppins', Arial, sans-serif;
@@ -406,6 +462,32 @@
         </div>
     </header>
     <main class="">
+        <section class="ciexe-banner">
+            <div class="cb-container">
+                <div class="row-banner">
+                    <h4>Soluciones de evaluación psicométrica para instituciones educativas y empresariales</h4>
+                </div>
+                <div class="row-banner">
+                    <div class="col">
+                        
+                        <p>Ante los cambios en los planes de estudio, es fundamental entender el rol de la Orientación Vocacional desde la perspectiva de los líderes educativos.</p>
+                        <p>Participa en nuestra primer gran encuesta nacional y ayúdanos a construir un panorama más claro de la situación educativa en México.</p>
+                    </div>
+                    <div class="col">
+                        
+                        
+                        <ul>
+                            <li>✓ Duración: 5 minutos.</li>
+                            <li>✓ Aportación: Data real e independiente.</li>
+                            <li>✓ Beneficio: Acceso exclusivo al informe.</li>
+                        </ul>
+                        <a href="">
+                            <div  class="cta-bn" style="width:100%; font-size:1.1rem;">Quiero participar <br> y recibir el informe </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="container bg-grey">
             <div class="row">
                 <div class="col" >
